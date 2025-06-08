@@ -1,65 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tirshana Cak Bakery</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trishana Cake Bakery - Crafting Sweet Memories</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Tirshana Cak Bakery</h1>
-    <nav>
-      <a href="#menu">Menu</a>
-      <a href="#order">Order Online</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Delicious Cakes Delivered to Your Door!</h2>
-    <p>Order online and get freshly baked joy delivered to your doorstep.</p>
-    <a href="#order" class="btn">Order Now</a>
-  </section>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Trishana</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="cakes.html">Our Cakes</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="menu">
-    <h2>Our Menu</h2>
-    <div class="menu-items">
-      <div class="item">
-        <img src="assets/images/chocolate-cake.jpg" alt="Chocolate Cake" />
-        <h3>Chocolate Cake</h3>
-        <p>Rich and moist with dark chocolate frosting</p>
-      </div>
-      <div class="item">
-        <img src="assets/images/vanilla-cake.jpg" alt="Vanilla Cake" />
-        <h3>Vanilla Delight</h3>
-        <p>Classic vanilla layered with fresh cream</p>
-      </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Trishana Cake Bakery</h1>
+                <p>Crafting Sweet Memories, One Slice at a Time.</p>
+                <a href="cakes.html" class="btn">Order Online Now</a>
+            </div>
+        </section>
+
+        <!-- Bestsellers Section -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Our Customer Favorites</h2>
+                <div class="cake-grid">
+                    <!-- Cake 1 -->
+                    <a href="product.html" class="cake-card">
+                        <img src="images/chocolate-fudge.jpg" alt="Decadent Chocolate Fudge Cake"> <!--! CUSTOMIZE HERE: Change image path -->
+                        <div class="cake-card-content">
+                            <h3>Decadent Chocolate Fudge</h3>
+                            <p>Starting from $45</p>
+                        </div>
+                    </a>
+                    <!-- Cake 2 -->
+                    <a href="product.html" class="cake-card">
+                        <img src="images/red-velvet.jpg" alt="Royal Red Velvet Cake"> <!--! CUSTOMIZE HERE: Change image path -->
+                        <div class="cake-card-content">
+                            <h3>Royal Red Velvet</h3>
+                            <p>Starting from $50</p>
+                        </div>
+                    </a>
+                    <!-- Cake 3 -->
+                    <a href="product.html" class="cake-card">
+                        <img src="images/fruit-cake.jpg" alt="Fresh Fruit Delight Cake"> <!--! CUSTOMIZE HERE: Change image path -->
+                        <div class="cake-card-content">
+                            <h3>Fresh Fruit Delight</h3>
+                            <p>Starting from $55</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Snippet -->
+        <section style="background-color: #fff;">
+            <div class="container">
+                 <h2 class="section-title">Baked with Love & Passion</h2>
+                 <p style="max-width: 800px; margin: 0 auto;">From a family kitchen to your celebration, Trishana Cake Bakery has always been about more than just cake. It's about passion, quality ingredients, and the joy of creating something truly special for your memorable moments.</p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Trishana Cake Bakery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-options">
+            <!--! CUSTOMIZE HERE: Add your WhatsApp Number and Facebook Page name -->
+            <a href="https://wa.me/15551234567" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://m.me/YourFacebookPageName" target="_blank" class="facebook-btn"><i class="fab fa-facebook-messenger"></i></a>
+        </div>
+        <div class="chat-widget-button" id="chat-toggle">
+            <i class="fas fa-comment-dots"></i>
+        </div>
     </div>
-  </section>
-
-  <section id="order">
-    <h2>Order Online</h2>
-    <p>Fast, simple, and sweet! Choose your cake and we’ll take care of the rest.</p>
-    <a href="#" class="btn">Start Your Order</a>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@tirshanabakery.com">info@tirshanabakery.com</a></p>
-    <p>Phone: +1 234 567 8900</p>
-    <p>Follow us:</p>
-    <div class="socials">
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">Twitter</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Tirshana Cak Bakery. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
